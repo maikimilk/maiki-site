@@ -1,7 +1,5 @@
-import {graphql, Link, PageProps} from "gatsby";
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import React from "react";
-import {fromatDate} from '../data'
 import Home from "./Home";
 import Products from "./Products";
 import About from "./About";

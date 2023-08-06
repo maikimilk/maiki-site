@@ -13,8 +13,9 @@ const Products: React.FC = () =>{
     return(
         <Layout>
         <main className='styles'>
-            <h1>Products</h1>
+            <strong>Products</strong>
             <p>maikiが制作した物の一覧です</p>
+            <br/>
             <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={4}>
                 <Box bg="gray.200" p={4}>
                     <Link to="/ProductA"><StaticImage src ='../images/product-a.png'/></Link>
