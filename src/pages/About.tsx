@@ -7,8 +7,6 @@ import {Image, Box, SimpleGrid} from '@chakra-ui/react'
 import { IconContext } from 'react-icons'
 import { FaTwitterSquare } from 'react-icons/fa'
 import { AiFillGithub } from 'react-icons/ai'
-import index from './index';
-import NavigationButton from "../components/NavigationButton";
 import {StaticImage} from "gatsby-plugin-image";
 import {ExternalLinkIcon} from "@chakra-ui/icons";
 
@@ -28,8 +26,9 @@ const About: React.FC = () =>{
 
     return(
         <Layout>
-            <main className='main-content'>
+            <main className='about'>
                 <title>About</title>
+                <strong style={{ textAlign: 'left' }}>About</strong>
             <h1>Intoroduce of omaiki</h1>
                 <br/>
             <p>maikiとはおまいきである。</p>
@@ -53,19 +52,19 @@ const About: React.FC = () =>{
                     </div>
                 </IconContext.Provider>
                 <br/>
-                <h5>使用可能技術</h5>
+                <h5>SKILLS</h5>
                 <br/>
                 <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={4}>
                     <Box bg="gray.200" p={4}>
-                        <StaticImage src ='../images/product-a.png'/>
+                        <StaticImage src ='../images/product-a.png' alt='Product-a'/>
                         <h2>プロフィールサイト</h2>
                     </Box>
                     <Box bg="gray.200" p={4}>
-                        <StaticImage src ='../images/product-b.png'/>
+                        <StaticImage src ='../images/product-b.png' alt='Product-b'/>
                         <h3>論文通知BOT</h3>
                     </Box>
                     <Box bg="gray.200" p={4}>
-                        <StaticImage src ='../images/product-c.png'/>
+                        <StaticImage src ='../images/product-c.png' alt='Product-c'/>
                         <h4>自律制御マシン</h4>
                     </Box>
                 </SimpleGrid>

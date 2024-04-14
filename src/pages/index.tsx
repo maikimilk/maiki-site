@@ -7,6 +7,7 @@ import ContactPage from "./Contact";
 import ProductA from "./ProductA";
 import ProductB from "./ProductB";
 import ProductC from "./ProductC";
+import ThanksPage from "./ThanksPage";
 
 
 function index() {
@@ -18,6 +19,7 @@ function index() {
                     <Route path="/Products" element={<Products />} />
                     <Route path="/About" element={<About />} />
                     <Route path="/Contact" element={<ContactPage />} />
+                    <Route path="/ThanksPage" element={<ThanksPage />} />
                     <Route path="/ProductA" element={<ProductA />} />
                     <Route path="/ProductB" element={<ProductB />} />
                     <Route path="/ProductC" element={<ProductC />} />

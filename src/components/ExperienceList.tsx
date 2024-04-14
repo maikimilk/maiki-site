@@ -1,18 +1,25 @@
 import React from 'react';
 
-const ExperienceList = ({ experiences }) => {
+interface Experience {
+    title: string;
+    duration: string;
+}
+
+interface ExperienceListProps {
+    experiences: Experience[];
+}
+
+const ExperienceList: React.FC<ExperienceListProps> = ({ experiences }) => {
     return (
         <ul>
             {experiences.map((experience, index) => (
                 <li key={index}>
                     <h3>{experience.title}</h3>
-                    <p>{experience.company}</p>
                     <p>{experience.duration}</p>
-                    <p>{experience.description}</p>
                 </li>
             ))}
         </ul>
     );
 };
 
-export  default ExperienceList;
+export default ExperienceList;

@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
 import { Image , Box } from '@chakra-ui/react'
-import img from "../images/product-b.png";
 import "../styles/Styles.css";
 
 
@@ -11,7 +10,7 @@ const ProductB:React.FC = () =>{
             <main className = 'styles'>
                 <h1>Product A</h1>
                 <Box boxSize='1000px'>
-                    <Image src= {img} alt='Product-B' />
+                    <Image src= '../images/product-b.png' alt='Product-B' />
                 </Box>
                 <article>
                     <h2>概要</h2>
