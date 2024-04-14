@@ -1,19 +1,21 @@
-import {graphql, Link, PageProps} from "gatsby";
 import React from "react";
 import Layout from "../components/Layout";
 import ContactForm from "../components/ContactForm";
 import "../styles/Styles.css";
-import {fromatDate} from '../data'
 
+const CenterStyle = {
+    display: 'flex',
+    justifyContent: 'center'
+};
 
 export default function ContactPage(){
     return(
         <Layout>
-            <main className= 'styles'>
+            <main className= 'styles' >
                 <strong>Contact</strong>
-                <p>ご連絡の際は以下のフォームからご連絡ください。</p>
-                <h1>form</h1>
-                <ContactForm />
+                <p style={CenterStyle}>ご連絡の際は以下のフォームからご連絡ください。</p>
+                <p style={CenterStyle}>お気軽にお問い合わせください。</p>
+                <ContactForm/>
             </main>
         </Layout>
     )
